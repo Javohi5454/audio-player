@@ -35,7 +35,7 @@ class PLAYER{
     const duration = Math.floor(audio.duration)
     timeLineCurrent.style.width = `${currentTime/duration*100}%`
     timeLineRange.value = currentTime/duration*100
-    if(timeLineRange.value >= 46){
+    if(timeLineRange.value >= 100){
       const {audio,iconPlay} = this
       this.switch = !this.switch
       this.switch ? audio.play() : audio.pause()
